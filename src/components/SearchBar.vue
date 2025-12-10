@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import Button from '@/shadcn/components/ui/button/Button.vue'
+import Input from '@/shadcn/components/ui/input/Input.vue'
+import { Spinner } from '@/shadcn/components/ui/spinner'
+import { SearchLoading } from '@/stores/searchStore/searchStates'
 import { useSearchStore } from '@/stores/searchStore/searchStore'
 import { ref } from 'vue'
 
@@ -12,37 +16,16 @@ const handleSearch = () => {
 </script>
 
 <template>
-  <div class="search-bar">
-    <input type="text" v-model="searchQuery" placeholder="Search for a video" />
-    <button @click="handleSearch">Search</button>
+  <div class="flex flex-row items-center justify-center gap-2 sticky top-4">
+    <Input
+      @keyup.enter="handleSearch"
+      type="text"
+      v-model="searchQuery"
+      placeholder="Search for a video"
+      class="bg-background"
+    />
+    <Button variant="default" @click="handleSearch"
+      ><Spinner v-if="searchStore.state instanceof SearchLoading" /> Search</Button
+    >
   </div>
 </template>
-
-<style scoped>
-.search-bar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-  top: 20px;
-  position: sticky;
-}
-
-input {
-  width: 100%;
-  padding: 13px 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  font-size: 16px;
-}
-
-button {
-  padding: 15px 20px;
-  border: none;
-  border-radius: 10px;
-  background-color: #ff9b0e;
-  color: #fff;
-}
-</style>

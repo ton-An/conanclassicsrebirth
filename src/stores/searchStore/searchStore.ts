@@ -26,13 +26,13 @@ export const useSearchStore = defineStore('search', {
     async search(query: string) {
       this.state = new SearchLoading()
 
-      const { data, error } = await supabase
-        .from('videos')
-        .select('*')
-        .ilike('title', `%${query}%`)
-        .limit(50)
+      const { data, error } = await supabase.from('videos').select('*').ilike('title', `%${query}%`)
 
-      this.state = new SearchLoaded(data ?? [])
+      const sortedData = data?.sort((a, b) => {
+        return (b.src?.length ?? 0) - (a.src?.length ?? 0)
+      })
+
+      this.state = new SearchLoaded(sortedData ?? [])
 
       if (error instanceof Failure) {
         this.state = new SearchFailure(new RequestFailure())

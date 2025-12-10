@@ -13,6 +13,7 @@ export type Database = {
           duration: string | null
           id: string
           slug: string | null
+          src: string | null
           title: string | null
           video_type: string | null
         }
@@ -20,6 +21,7 @@ export type Database = {
           duration?: string | null
           id: string
           slug?: string | null
+          src?: string | null
           title?: string | null
           video_type?: string | null
         }
@@ -27,6 +29,7 @@ export type Database = {
           duration?: string | null
           id?: string
           slug?: string | null
+          src?: string | null
           title?: string | null
           video_type?: string | null
         }
