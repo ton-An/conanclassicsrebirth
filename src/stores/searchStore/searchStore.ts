@@ -14,8 +14,8 @@ import type { Database } from '@/models/supabase.types'
 import { RequestFailure } from '@/failures/request_failure'
 
 const supabase = createClient<Database>(
-  'https://bljkukzzfpicscafgxsv.supabase.co',
-  'sb_publishable_oE3bb-NmhGGXd7_NDKu9AQ_IcLSP2vI',
+  import.meta.env.VITE_SUPABASE_URL!,
+  import.meta.env.VITE_SUPABASE_SERVICE_KEY!,
 )
 
 export const useSearchStore = defineStore('search', {
