@@ -1,6 +1,12 @@
 // stores/dataStore.ts
 
+import { createClient } from '@supabase/supabase-js'
+import { defineStore } from 'pinia'
+
 import { Failure } from '@/failures/failure'
+import { RequestFailure } from '@/failures/networkFailures/request_failure'
+import type { Database } from '@/models/supabase.types'
+
 import {
   SearchFailure,
   SearchInitial,
@@ -8,10 +14,6 @@ import {
   SearchLoading,
   SearchState,
 } from './searchStates'
-import { defineStore } from 'pinia'
-import { createClient } from '@supabase/supabase-js'
-import type { Database } from '@/models/supabase.types'
-import { RequestFailure } from '@/failures/request_failure'
 
 const supabase = createClient<Database>(
   import.meta.env.VITE_SUPABASE_URL!,

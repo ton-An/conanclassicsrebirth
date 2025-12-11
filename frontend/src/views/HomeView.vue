@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import FaqSheet from './components/FaqSheet.vue'
-import SearchBar from './components/SearchBar.vue'
-import SearchResults from './components/SearchResults.vue'
+import FaqSheet from '@/components/FaqSheet.vue'
+import SearchBar from '@/components/SearchBar.vue'
+import SearchResults from '@/components/SearchResults.vue'
 </script>
 
 <template>
