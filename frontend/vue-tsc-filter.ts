@@ -6,7 +6,7 @@ import * as os from "os";
 // ========================================================
 const IGNORE_PATTERNS: RegExp[] = [
   // Hides all errors from shadcn components
-  /src\/core\/presentation\/shadcn/,
+  /src\/shadcn/,
   // Hides specific feature folders if you want
   // /features\/saunaDetails/,
 ];
