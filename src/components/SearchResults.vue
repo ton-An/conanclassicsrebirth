@@ -12,7 +12,7 @@ const searchStore = useSearchStore()
     <div
       v-for="result in searchStore.state instanceof SearchLoaded ? searchStore.state.videos : []"
       :key="result.id"
-      class="flex flex-row items-center justify-between gap-12 p-2 border-b-1 rounded-md"
+      class="flex flex-row items-center justify-between gap-12 p-2.5 border-b-1"
     >
       <a
         target="_blank"
