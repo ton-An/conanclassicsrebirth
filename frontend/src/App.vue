@@ -57,9 +57,8 @@ const searchStore = useSearchStore()
 
 onMounted(() => {
   if (shouldShowBrowserWarning()) {
-    toast.warning('Playback not supported', {
-      description:
-        'Your browser does not support the required playback technology. Use Safari or an up-to-date Chrome based browser',
+    toast.warning(t('playbackNotSupported.title'), {
+      description: t('playbackNotSupported.description'),
       duration: 10000,
       position: 'top-right',
       closeButton: true,

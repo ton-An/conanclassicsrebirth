@@ -1,7 +1,11 @@
 <script setup lang="ts">
+import { Github } from 'lucide-vue-next'
+
+import i18n from '@/i18n/i18n'
 import { Button } from '@/shadcn/components/ui/button'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/shadcn/components/ui/card'
-import { Github } from 'lucide-vue-next'
+
+const t = i18n.global.t
 </script>
 
 <template>
@@ -10,12 +14,13 @@ import { Github } from 'lucide-vue-next'
   >
     <Card class="w-full rounded-[10px] border-0 gap-3">
       <CardHeader>
-        <CardTitle class="flex items-center gap-2"><Github /> Proudly Open Source</CardTitle>
+        <CardTitle class="flex items-center gap-2"
+          ><Github /> {{ t('openSource.title') }}</CardTitle
+        >
       </CardHeader>
       <CardContent>
         <p class="text-foreground/80">
-          This means that the source code is publicly available. You are invited to contribute,
-          report bugs or suggest new features.
+          {{ t('openSource.description') }}
         </p>
       </CardContent>
       <CardFooter class="flex flex-col gap-2">
@@ -26,7 +31,7 @@ import { Github } from 'lucide-vue-next'
           variant="outline"
           class="w-full"
         >
-          View on GitHub
+          {{ t('openSource.viewOnGitHub') }}
         </Button>
       </CardFooter>
     </Card>

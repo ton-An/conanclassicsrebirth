@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { Tables } from '@/models/supabase.types'
+import { VideoOff } from 'lucide-vue-next'
+
 import { SearchLoaded } from '@/stores/searchStore/searchStates'
 import { useSearchStore } from '@/stores/searchStore/searchStore'
-import { VideoOff } from 'lucide-vue-next'
 
 const searchStore = useSearchStore()
 </script>
