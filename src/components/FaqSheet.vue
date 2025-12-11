@@ -34,6 +34,11 @@ const faqItems = [
     answer:
       'Due to the Conan Classics server interface being quite broken, only ~3k of the 15k video links were recoverable. Non watchable search results redirect to the video on the Conan Classics website.',
   },
+  {
+    question: 'Is this project affiliated with Team Coco?',
+    answer:
+      'This project has no affiliation with Team Coco. It was born of a far more tragic, and frankly, far more petty origin story: a single, faithful pizza night where the Conan Classics website cruelly denied my right to binge-watch.',
+  },
 ]
 </script>
 
