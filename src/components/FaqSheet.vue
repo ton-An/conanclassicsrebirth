@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { Button } from '@/shadcn/components/ui/button'
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from '@/shadcn/components/ui/accordion'
+import { Button } from '@/shadcn/components/ui/button'
 import {
   Sheet,
   SheetClose,
@@ -16,6 +16,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/shadcn/components/ui/sheet'
+
 import OpenSourceCard from './OpenSourceCard.vue'
 
 const faqItems = [
@@ -25,7 +26,7 @@ const faqItems = [
       'The videos stream straight from the Conan Classics servers. The search engine does not store any videos.',
   },
   {
-    question: 'Why does the video stream not work on my browser?',
+    question: 'Why does the video stream not work in my browser?',
     answer:
       "Due to technical limitations, the video needs to be played through your browser's native video player. Some browser do not support the required video format yet. That is why only Safari and recent Chrome-based browsers are supported.",
   },
