@@ -46,6 +46,7 @@ onMounted(() => {
         'Your browser does not support the required playback technology. Use Safari or an up-to-date Chrome based browser',
       duration: 10000,
       position: 'top-right',
+      closeButton: true,
     })
   }
 })
