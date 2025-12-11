@@ -16,6 +16,10 @@
   Built for fans who just want to binge-watch some classic Conan moments.
 </p>
 
+## 🚧 Coming Soon
+
+- Documentation for the most important API queries to conanclassic.com
+
 ## Tech Stack
 
 - **Frontend:** Vue 3, TypeScript, Tailwind CSS, Vite
