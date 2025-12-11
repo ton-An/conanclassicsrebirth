@@ -42,7 +42,7 @@ const faqItems = [
     <SheetTrigger as-child>
       <Button variant="outline" class="fixed bottom-4 right-4"> FAQ </Button>
     </SheetTrigger>
-    <SheetContent>
+    <SheetContent class="overflow-y-scroll">
       <SheetHeader>
         <SheetTitle>FAQ</SheetTitle>
         <SheetDescription>
