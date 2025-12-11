@@ -1,6 +1,20 @@
-# Conan Classics Rebirth
+<p align="center">
+  <img src="frontend/src/assets/hair.png" alt="Conan Classics Rebirth" width="120" />
+</p>
 
-A search engine for Conan Classics, replacing the broken search on conanclassic.com. Built for fans who just want to binge-watch some classic Conan moments.
+<h1 align="center">Conan Classics Rebirth</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Vue-3-4FC08D?logo=vuedotjs&logoColor=white" alt="Vue 3" />
+  <img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Supabase-PostgreSQL-3FCF8E?logo=supabase&logoColor=white" alt="Supabase" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License" />
+</p>
+
+<p align="center">
+  A search engine for Conan Classics, replacing the broken search on conanclassic.com.<br/>
+  Built for fans who just want to binge-watch some classic Conan moments.
+</p>
 
 ## Tech Stack
 
