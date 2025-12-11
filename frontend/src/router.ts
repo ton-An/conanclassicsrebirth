@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
-import SearchResults from './components/SearchResults.vue'
 import Home from './Home.vue'
 
 const router = createRouter({
